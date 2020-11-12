@@ -10,4 +10,4 @@ The workspace contains two folders by default, where:
 - `lib`: the folder to maintain dependencies
 
 ## Running Application
-- in the file directory opens the terminal type: ```./run.sh```
+- In the file directory opens the terminal type: ```./run.sh```
