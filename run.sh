@@ -8,11 +8,7 @@ gnome-terminal --title="Computing" --tab -- java Intermediate
 gnome-terminal --title="Decision" --tab -- java Client
 
 
-# gnome-terminal --tab  --working-directory='./src' -- javac Client.java
 
-# gnome-terminal --tab --working-directory='./src' -- java Server
-# gnome-terminal --tab --working-directory='./src' -- java Intermediate
-# gnome-terminal --tab --working-directory='./src' -- java Client
 
 
 
