@@ -15,35 +15,34 @@ class ClientHandler extends Thread
         this.client = s; 
         threadid  = threadcount;
         threadcount++;
-        System.out.println(threadid);
     } 
   
     @Override
     public void run()
     { 
-        while (true)  
-        {  
+        while(true) {
             try{
-            String message = recieveFromClient();
-            if(message == null) {
-                break;
-            }
-            if (message.equals("getWaterPressure")) {
-                System.out.println(message);
-                String val = Double.toString(rand.nextDouble()*10.0);
-                sendToClient(val);
-             }
-            else if(message.equals("close")) {
-                System.out.println(message);
-                sendToClient("closed!");
-            } else if(message.equals("open")) {
-                System.out.println(message);
-                sendToClient("opened!");
-            }
-        } catch(IOException e){
-            e.printStackTrace();
-        }   //
-        } 
+                    String message = recieveFromClient();
+                   
+                    if (!message.contains("close") && !message.contains("open") && !message.contains("rotate") ) {
+                        String val = Double.toString(rand.nextDouble()*10.0);
+                        sendToClient(val);
+                    }
+                    else if(message.contains("close")) {
+                        System.out.println(message);
+                        sendToClient("closed!");
+                    } else if(message.contains("open")) {
+                        System.out.println(message);
+                        sendToClient("opened!");
+                    }
+                    else if(message.contains("rotate")) {
+                        System.out.println(message);
+                        sendToClient("rotated!");
+                    }
+            } catch(IOException e){
+                //e.printStackTrace();
+            }   //
+        }
     }
     private  String recieveFromClient() throws IOException{
         //Recieve message from Computing Node
