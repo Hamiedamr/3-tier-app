@@ -11,3 +11,6 @@ The workspace contains two folders by default, where:
 
 ## Running Application
 - In the file directory opens the terminal type: ```./run.sh```
+## Copyrights
+This repo is deliverd to professor/Gamal Abdleshafy
+According to Assignment 2 Delievery
