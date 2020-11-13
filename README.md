@@ -1,4 +1,4 @@
-## Getting Started
+## Introduction
 
 Here I Introduce a Distributed Power System baesd on 3 tier architecture model
 
