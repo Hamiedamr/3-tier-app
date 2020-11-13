@@ -10,7 +10,7 @@ The workspace contains two folders by default, where:
 - `lib`: the folder contains ```aglet.jar``` package file
 
 ## Running Application
-- In the file directory opens the terminal type: ```./run.sh```
+- In the project directory opens the terminal type: ```./run.sh```
 ## Copyrights
 This repo is deliverd to professor/Gamal Abdleshafy
 According to Assignment 2 Delievery
